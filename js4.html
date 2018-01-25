@@ -1,0 +1,56 @@
+<script>
+    function ff(){
+        var no1 = parseInt(frm2.n1.value);
+        var no2 = parseInt(frm2.n2.value);
+        var op = frm2.sel.value;
+        
+        if(op=="+")
+            {
+            frm2.ans.value=(no1+no2);
+           }
+        else if(op=="-")
+                {
+                frm2.ans.value=(no1-no2);
+                }
+        else if(op=="*")
+                {
+                frm2.ans.value=(no1*no2);
+                }
+        else if(op=="/")
+                {
+                frm2.ans.value=(no1/no2);
+                }
+    }
+
+</script>
+
+<form name="frm2"> 
+<table border="2" width="25%" height="25%" cellspacing="5" cellpadding="5">
+<tr align="center">
+        <td>No1</td>
+        <td colspan="5"><input type="text" size="30"  name="n1"></td>
+</tr>
+<tr align="center">
+        <td>No2</td>
+        <td colspan="5"><input type="text" size="30"  name="n2"></td>
+</tr>
+<tr>
+    <td colspan="5"><select name="sel" >
+            <option value="+">Addition</option>
+            <option value="-">Substraction</option>
+            <option value="*">Multiplication</option>
+            <option value="/">Division</option>
+        
+        </select></td>
+</tr>    
+    
+<tr align="center">
+        <td colspan="6"><input type="button" value="Answer" onclick="ff();"></td>
+</tr>
+<tr align="center">
+        <td>Ans</td>
+        <td colspan="5"><input type="text" size="30"  name="ans"> </td>
+</tr>    
+
+</table>
+</form>

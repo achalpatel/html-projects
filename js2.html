@@ -1,0 +1,57 @@
+<script>
+    
+    function add()
+    {
+        var no1 = parseInt(frm1.n1.value);
+        var no2 = parseInt(frm1.n2.value);
+        frm1.n3.value = (no1+no2);
+        
+    }
+    function mult()
+    {
+        var no1 = frm1.n1.value;
+        var no2 = frm1.n2.value;
+        frm1.n3.value = (no1*no2);
+    }
+    function sub()
+    {
+        var no1 = frm1.n1.value;
+        var no2 = frm1.n2.value;
+        frm1.n3.value = (no1-no2);
+    }
+    function div()
+    {
+        var no1 = frm1.n1.value;
+        var no2 = frm1.n2.value;
+        frm1.n3.value = (no1/no2);
+    }
+</script>
+
+<form name="frm1">
+<table border="2" width="25%" height="25%" cellspacing="5" cellpadding="5">
+    <tr align="center">
+        <td>No1</td>
+        <td colspan="5"><input type="text" size="30"  name="n1"></td>
+    </tr>
+    <tr align="center">
+        <td>No2</td>
+        <td colspan="5"><input type="text" size="30"  name="n2"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="button" value="Addition" onclick="add();"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="button" value="Multiplication" onclick="mult();"></td>
+    </tr><tr align="center">
+        <td colspan="6"><input type="button" value="Substraction" onclick="sub();"></td>
+    </tr><tr align="center">
+        <td colspan="6"><input type="button" value="Division" onclick="div();"></td>
+    </tr>
+    <tr align="center">
+        <td>Answer:</td>
+        <td colspan="5"><input type="text" size="30" name="n3"></td>
+    </tr>
+    
+    
+</table>
+</form>

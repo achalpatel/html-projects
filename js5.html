@@ -1,0 +1,42 @@
+<script>
+    function hob(){
+        var ans="";
+        if(frm1.c1.checked==true)
+        {
+            ans = "Swimming ";     
+        }
+        if(frm1.c2.checked==true)
+            {
+                ans += "Cricket ";
+            }
+        if(frm1.c3.checked==true)
+            {
+                ans += "Badminton ";
+            }
+        if(frm1.c4.checked==true)
+            {
+                ans += "soccer ";
+            }
+        frm1.txtans.value = ans;
+    }
+</script>
+
+<form name="frm1">
+<table border="1" width="25%" height="25%">
+    <tr>
+        <td>Hobbies</td>
+        <td colspan = "5">
+            <input type = "checkbox" name="c1">Swimming
+            <input type="checkbox" name="c2">Cricket
+            <input type="checkbox" name="c3">Badminton<br>
+            <input type="checkbox" name="c4">Soccer
+        </td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="button" value="Show hobbies" onclick="hob();"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="text" size="50" name="txtans"></td>
+    </tr>
+</table>
+</form>

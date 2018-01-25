@@ -1,0 +1,29 @@
+
+<script>
+    function sc1(){
+        var no1 = frm1.n1.value;
+        if(frm1.r1.value=="sq"){
+            frm1.txtans.value=(no1*no1);
+        }
+        if(frm1.r1.value=="cu"){
+            frm1.txtans.value=(no1*no1*no1);
+        }
+    }
+</script>
+<form name="frm1">
+<table border="2" width="25%" height="25%"?>
+    <tr align="center">
+        <td>No1</td>
+        <td colspan="5"><input type="text" size="30"  name="n1"></td>
+    </tr>
+    <tr>
+        <td align="center">Solve</td>
+        <td colspan="5" align="center"><input type="radio" name="r1" value="sq" onclick="sc1()">Square
+            <input type="radio" name="r1" value="cu" onclick="sc1()">Cube</td>
+    </tr>
+    <tr align="center">
+        <td>Answer</td>
+        <td colspan="5" align="center"><input type="text" name="txtans" size="30"></td>
+    </tr>
+</table>
+</form>

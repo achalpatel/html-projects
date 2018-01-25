@@ -1,0 +1,61 @@
+<script>
+    function f(){
+    var m1 = parseInt(frm1.n1.value);
+    var m2 = parseInt(frm1.n2.value);
+    var m3 = parseInt(frm1.n3.value);
+    var m4 = parseInt(frm1.n4.value);
+    
+    frm1.tm.value= (m1+m2+m3+m4);
+   
+    if( frm1.tm.value>=320){
+        frm1.grade.value = "AA";
+    }    
+    else if( frm1.tm.value >= 250 &&  frm1.tm.value < 320){
+                frm1.grade.value = "BB";
+            }
+        else if( frm1.tm.value >= 150 &&  frm1.tm.value <250){
+                    frm1.grade.value = "CC";
+                }
+        else if( frm1.tm.value >= 100 && frm1.tm.value <150){
+                    frm1.grade.value = "DD";
+                }
+        else{
+                frm1.grade.value =  "Fail";
+                
+                }
+    }
+</script>
+<form name="frm1">
+    <table border="1" width="25%" height="25%" cellspacing="5" cellpadding="5">
+    <tr>
+        <td colspan="6">Enter marks of 4 subjects</td>    
+    </tr>
+    <tr align="center">
+        <td>sub1</td>
+        <td colspan="5"><input type="text" size="30"  name="n1"></td>
+    </tr>
+     <tr align="center">
+        <td>sub2</td>
+        <td colspan="5"><input type="text" size="30"  name="n2"></td>
+    </tr>
+     <tr align="center">
+        <td>sub3</td>
+        <td colspan="5"><input type="text" size="30"  name="n3"></td>
+    </tr>
+     <tr align="center">
+        <td>sub4</td>
+        <td colspan="5"><input type="text" size="30"  name="n4"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="button" value="Evaluate grade" onclick="f();"></td>
+    </tr>
+         <tr align="center">
+        <td>Toal marks</td>
+        <td colspan="5"><input type="text" size="30"  name="tm"></td>
+    </tr>
+    <tr align="center">
+        <td>Grade</td>
+        <td colspan="5"><input type="text" size="30"  name="grade"></td>
+    </tr>
+    </table>
+</form>

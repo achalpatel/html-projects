@@ -1,0 +1,36 @@
+<script>
+    function f1(){
+        var no1 = frm1.n1.value;
+        var no2 = frm1.n2.value;
+        if (no1 > no2) {
+            frm1.n3.value = (no1);
+        }
+        else{
+            frm1.n3.value = (no2);
+        }
+    }
+
+</script>
+
+
+<form name="frm1">
+<table border="2" width="25%" height="25%" cellspacing="5" cellpadding="5">
+    <tr align="center">
+        <td>No1</td>
+        <td colspan="5"><input type="text" size="30"  name="n1"></td>
+    </tr>
+    <tr align="center">
+        <td>No2</td>
+        <td colspan="5"><input type="text" size="30"  name="n2"></td>
+    </tr>
+    <tr align="center">
+        <td colspan="6"><input type="button" value="Max between two" onclick="f1();"></td>
+    </tr>
+    <tr align="center">
+        <td>Answer:</td>
+        <td colspan="5"><input type="text" size="30" name="n3"></td>
+    </tr>
+    
+    
+</table>
+</form>
